@@ -1,4 +1,4 @@
-package com.example.userservice.domain;
+package com.example.userservice.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,7 +11,7 @@ import static javax.persistence.GenerationType.AUTO;
 @Entity @Data @NoArgsConstructor @AllArgsConstructor
 public class User {
     @Id @GeneratedValue(strategy = AUTO)
-    private long id;
+    private Long id;
     private String name;
     private String username;
     private String password;
